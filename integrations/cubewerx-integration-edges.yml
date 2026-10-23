@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/cubewerx/integrations
+- https://n8n.io/integrations/cubewerx/
+- https://composio.dev/toolkits/cubewerx
+- https://monid.ai/tools/cubewerx
+checked:
+- https://composio.dev/toolkits/cubewerx
+- https://monid.ai/tools/cubewerx
+- https://n8n.io/integrations/cubewerx/
+- https://zapier.com/apps/cubewerx/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

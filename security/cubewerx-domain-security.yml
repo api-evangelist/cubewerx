@@ -1,0 +1,15 @@
+generated: '2026-10-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.cubewerx.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Jan 16 17:43:21 2027 GMT
+  hsts: false
+domains:
+- domain: cubewerx.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

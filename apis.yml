@@ -1,23 +1,79 @@
 aid: cubewerx
+
 name: CubeWerx
-description: 'CubeWerx is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://d8dr4032v6tl6.cloudfront.net/wp-content/uploads/2019/11/CUBEWERX_Logo-Colour_Tagline.png
+
+description: CubeWerx provides a geospatial platform and related services that enable organizations to manage, secure, and publish geospatial
+  data as web services. It offers cloud‑hosted and on‑premise solutions, managed services, and self‑serve tools for commercial data providers,
+  government agencies, and defense and intelligence customers. The company also supplies analytics, access control, and consulting to support
+  spatial data infrastructures.
+
 url: https://raw.githubusercontent.com/api-evangelist/cubewerx/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
-- Company
-apis: []
+- Geospatial
+- Data Management
+- Web Mapping
+- Access Control
+- Analytics
+- Managed Services
+- Cloud
+- On-Premise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/cubewerx-hosts.yml
+- type: Newsroom
+  url: https://www.cubewerx.com/news/
+- type: Blog
+  url: https://www.cubewerx.com/blog/
+- type: DomainSecurity
+  url: security/cubewerx-domain-security.yml
 - type: Website
   url: http://www.cubewerx.com/
+
+apis:
+- name: Stratos Platform API
+  description: Enterprise platform solution for earth observation data providers, includes OGC web services.
+  humanURL: https://www.cubewerx.com/stratos-platform/
+  baseURL: null
+  aid: cubewerx:stratos-platform-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, GraphQL, AsyncAPI, gRPC, or WSDL files were found on CubeWerx domains.
+  evidence:
+  - url: https://www.cubewerx.com/openapi.json
+    status: 404
+  - url: https://www.cubewerx.com/openapi.yaml
+    status: 404
+  - url: https://www.cubewerx.com/swagger.json
+    status: 404
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
